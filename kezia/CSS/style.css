@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Lato;
+    box-sizing: border-box;
+  }
+
+
+  .main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: auto;
+    align-items: center;
+  }
+
+  .header {
+    text-align: center;
+    align-content:inline;
+    justify-content: space-between;
+    margin: 0 10px;
+  
+  
+  }
+
+img{
+    position: absolute;
+    width: 42.27px;
+    height: 42.27px;
+    /* right: 105px; */
+    left: 550px;
+    
+    
+    }
+
+h1 {
+        color: rgba(4, 102, 180, 1);
+        position: flex;
+        top: 1px;
+        /* left: 50px; */
+        font-family: Lato;
+        font-weight: ExtraBold;
+        font-size: 44px;
+        opacity: 1;
+        text-align: center;
+        margin-top: 20%;
+        left: 550px;
+      }
+
+      .text {
+        text-align: center;
+        margin-top: 2%;
+        /* margin-bottom: 5%; */
+        position: relative;
+      }
+
+      div.input-block {
+        position: relative;
+      }
+      div.input-block input {
+        font-weight: 500;
+        font-size: 1.6rem;
+        color: #495055;
+        width: 350px;
+        padding: 15px 15px;
+        border-radius: 1rem;
+        border: 2px solid  #D9D9D9;
+        outline:none;
+      }
+      div.input-block span.placeholder {
+        position: absolute;
+        margin: 17px 0;
+        padding: 0 4px;
+        font-family: Roboto, sans-serif;
+        color:  #6c757d;
+        display: flex;
+        align-items: center;
+        font-size: 1.6rem;
+        top: 0;
+        left: 17px;
+        transition: all 0.2s;
+        transform-origin: 0% 0%;
+        background: none;
+        pointer-events: none;
+      }
+      div.input-block input:valid + span.placeholder,
+      div.input-block input:focus + span.placeholder {
+        transform: scale(0.8) translateY(-30px);
+        background: #fff;
+      }
+      div.input-block input:focus{
+        color: #284B63;
+        border-color: #284B63;
+      }
+      div.input-block input:focus + span.placeholder {
+        color: #284B63;
+      }
+
+      .form-wrapper {
+        margin: 10rem auto;
+        max-width: 30rem;
+      }
+
+      .field-icon {
+        float: right;
+        margin-left: -25px;
+        margin-top: -25px;
+        position: relative;
+        z-index: 2;
+      }
+
+.password-field{
+    width: 200px;
+    
+}
