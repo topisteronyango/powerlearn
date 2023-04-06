@@ -1,27 +1,26 @@
-# def names(*namess):
-#     # using list comprehension
-#     empty_list = [nam for nam in namess]
+def names(*namess):
+    # Using for loop
+    # empty_list = []
+    # for nam in namess:
+    #     # print(nam)
+    #     empty_list.append(nam)
 
-#     # Using for loop
-#     # empty_list = []
-#     # for nam in namess:
-#     #     # print(nam)
-#     #     empty_list.append(nam)
+    # using list comprehension
+    empty_list = [nam for nam in namess]
+    return empty_list
 
-#     return empty_list
+naming = names("Topister", "Onyango", "Nandera", "Bety")
+print(naming)
 
-# naming = names("Topister", "Onyango", "Nandera", "Bety")
-# print(naming)
+def sum(*num):
+    count = 0
+    for i in num:
+        count += i
 
-# def sum(*num):
-#     count = 0
-#     for i in num:
-#         count += i
+    print(count)
+    return count
 
-#     print(count)
-#     return count
-
-# total = sum(20, 40, 50)
+total = sum(20, 40, 50)
 
 # You can use **kwargs in Python to add integers in a function by accepting 
 # variable keyword arguments and then using a loop to add all the integer values 
@@ -40,18 +39,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 def add_integers(**kwargs):
     result = 0
     for key, value in kwargs.items():
@@ -59,13 +46,3 @@ def add_integers(**kwargs):
             result += value
     return result
 print(add_integers(num1=10, num2=50, num3=30))
-
-# def add_ages(**ages):
-#     sum_total = 0
-#     for k, v in ages.items():
-#         sum_total = sum_total + v
-#         print(sum_total)
-#         return sum_total
-
-# print(add_ages(topister=30, nandera=45, Bety= 60))
-# print(Ages)
