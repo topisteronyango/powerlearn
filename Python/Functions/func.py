@@ -39,10 +39,10 @@ total = sum(20, 40, 50)
 
 
 
-def add_integers(**kwargs):
+def add_age(**kwargs):
     result = 0
     for key, value in kwargs.items():
         if isinstance(value, int):
             result += value
     return result
-print(add_integers(num1=10, num2=50, num3=30))
+print(add_age(topister=45, nandera=55, betty=30))
